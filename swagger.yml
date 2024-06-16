@@ -17,6 +17,7 @@ paths:
     get:
       summary: Get CoinMarketCap ID map
       description: Returns a paginated list of all cryptocurrencies by CoinMarketCap ID. We recommend using this convenience endpoint to lookup and utilize our unique cryptocurrency id across all endpoints as typical identifiers like ticker symbols can match multiple cryptocurrencies and change over time. As a convenience you may pass a comma-separated list of cryptocurrency symbols as symbol to filter this list to only those you require.
+      # noinspection YAMLIncompatibleTypes
       parameters:
       - name: listing_status
         in: query

@@ -1,4 +1,4 @@
-# CmcClient.DefaultApi
+# pycmc_client.DefaultApi
 
 All URIs are relative to *https://pro-api.coinmarketcap.com/v1*
 
@@ -23,18 +23,18 @@ Returns all static metadata for one or more cryptocurrencies including name, sym
 ```python
 from __future__ import print_function
 import time
-import CmcClient
-from CmcClient.rest import ApiException
+import pycmc_client
+from pycmc_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = CmcClient.Configuration()
+configuration = pycmc_client.Configuration()
 configuration.api_key['X-CMC_PRO_API_KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-CMC_PRO_API_KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = CmcClient.DefaultApi(CmcClient.ApiClient(configuration))
+api_instance = pycmc_client.DefaultApi(pycmc_client.ApiClient(configuration))
 id = 'id_example' # str | One or more comma-separated CoinMarketCap cryptocurrency IDs. Example \"1,2\" (optional)
 symbol = 'symbol_example' # str | Alternatively pass one or more comma-separated cryptocurrency symbols. Example: \"BTC,ETH\". At least one \"id\" or \"symbol\" is required. (optional)
 
@@ -79,18 +79,18 @@ Get a paginated list of all cryptocurrencies with market data for a given histor
 ```python
 from __future__ import print_function
 import time
-import CmcClient
-from CmcClient.rest import ApiException
+import pycmc_client
+from pycmc_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = CmcClient.Configuration()
+configuration = pycmc_client.Configuration()
 configuration.api_key['X-CMC_PRO_API_KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-CMC_PRO_API_KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = CmcClient.DefaultApi(CmcClient.ApiClient(configuration))
+api_instance = pycmc_client.DefaultApi(pycmc_client.ApiClient(configuration))
 timestamp = 'timestamp_example' # str | Timestamp (Unix or ISO 8601) to return historical cryptocurrency listings for. (optional)
 start = 1 # int | Optionally offset the start (1-based index) of the paginated list of items to return. (optional) (default to 1)
 limit = 100 # int | Optionally specify the number of results to return. Use this parameter and the \"start\" parameter to determine your own pagination size. (optional) (default to 100)
@@ -145,18 +145,18 @@ Get a paginated list of all cryptocurrencies with latest market data. You can co
 ```python
 from __future__ import print_function
 import time
-import CmcClient
-from CmcClient.rest import ApiException
+import pycmc_client
+from pycmc_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = CmcClient.Configuration()
+configuration = pycmc_client.Configuration()
 configuration.api_key['X-CMC_PRO_API_KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-CMC_PRO_API_KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = CmcClient.DefaultApi(CmcClient.ApiClient(configuration))
+api_instance = pycmc_client.DefaultApi(pycmc_client.ApiClient(configuration))
 start = 1 # int | Optionally offset the start (1-based index) of the paginated list of items to return. (optional) (default to 1)
 limit = 100 # int | Optionally specify the number of results to return. Use this parameter and the \"start\" parameter to determine your own pagination size. (optional) (default to 100)
 convert = 'USD' # str | Optionally calculate market quotes in up to 120 currencies at once by passing a comma-separated list of cryptocurrency or fiat currency symbols. Each additional convert option beyond the first requires an additional call credit. A list of supported fiat options can be found here. Each conversion is returned in its own \"quote\" object. (optional) (default to USD)
@@ -209,18 +209,18 @@ Returns a paginated list of all cryptocurrencies by CoinMarketCap ID. We recomme
 ```python
 from __future__ import print_function
 import time
-import CmcClient
-from CmcClient.rest import ApiException
+import pycmc_client
+from pycmc_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = CmcClient.Configuration()
+configuration = pycmc_client.Configuration()
 configuration.api_key['X-CMC_PRO_API_KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-CMC_PRO_API_KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = CmcClient.DefaultApi(CmcClient.ApiClient(configuration))
+api_instance = pycmc_client.DefaultApi(pycmc_client.ApiClient(configuration))
 listing_status = 'active' # str | Only active coins are returned by default. Pass 'inactive' to get a list of coins that are no longer active. (optional) (default to active)
 start = 1 # int | Optionally offset the start (1-based index) of the paginated list of items to return. (optional) (default to 1)
 limit = 56 # int | Optionally specify the number of results to return. Use this parameter and the \"start\" parameter to determine your own pagination size. (optional)
@@ -269,18 +269,18 @@ Get a paginated list of all cryptocurrencies with latest market data. You can co
 ```python
 from __future__ import print_function
 import time
-import CmcClient
-from CmcClient.rest import ApiException
+import pycmc_client
+from pycmc_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = CmcClient.Configuration()
+configuration = pycmc_client.Configuration()
 configuration.api_key['X-CMC_PRO_API_KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-CMC_PRO_API_KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = CmcClient.DefaultApi(CmcClient.ApiClient(configuration))
+api_instance = pycmc_client.DefaultApi(pycmc_client.ApiClient(configuration))
 time_start = 'time_start_example' # str | Timestamp (Unix or ISO 8601) to start returning quotes for. Optional, if not passed, we'll return quotes calculated in reverse from \"time_end\". (optional)
 time_end = 'time_end_example' # str | Timestamp (Unix or ISO 8601) to stop returning quotes for (inclusive). Optional, if not passed, we'll default to the current time. If no \"time_start\" is passed, we return quotes in reverse order starting from this time. (optional)
 count = 10 # int | The number of interval periods to return results for. Optional, required if both \"time_start\" and \"time_end\" aren't supplied. The default is 10 items. The current query limit is 10000. (optional) (default to 10)
@@ -333,18 +333,18 @@ Get the latest quote of aggregate market metrics. Use the \"convert\" option to 
 ```python
 from __future__ import print_function
 import time
-import CmcClient
-from CmcClient.rest import ApiException
+import pycmc_client
+from pycmc_client.rest import ApiException
 from pprint import pprint
 
 # Configure API key authorization: ApiKeyAuth
-configuration = CmcClient.Configuration()
+configuration = pycmc_client.Configuration()
 configuration.api_key['X-CMC_PRO_API_KEY'] = 'YOUR_API_KEY'
 # Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 # configuration.api_key_prefix['X-CMC_PRO_API_KEY'] = 'Bearer'
 
 # create an instance of the API class
-api_instance = CmcClient.DefaultApi(CmcClient.ApiClient(configuration))
+api_instance = pycmc_client.DefaultApi(pycmc_client.ApiClient(configuration))
 convert_id = 'convert_id_example' # str | One or more comma-separated cryptocurrency CoinMarketCap IDs. Example 1,2 (optional)
 convert = 'convert_example' # str | Optionally calculate market quotes in up to 120 currencies at once by passing a comma-separated list of cryptocurrency or fiat currency symbols. Each additional convert option beyond the first requires an additional call credit. A list of supported fiat options can be found here. Each conversion is returned in its own \"quote\" object. (optional)
 

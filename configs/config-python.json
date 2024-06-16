@@ -1,6 +1,6 @@
 {
-    "packageName": "CmcClient",
-    "projectName": "cmc-client",
+    "packageName": "pycmc_client",
+    "projectName": "pycmc_client",
     "packageVersion": "1.0.0",
-    "packageUrl" : "https://github.com/wilkosz/coinmarketcap_api_sdks/tree/master/python"
+    "packageUrl" : "https://github.com/power-edge/pycmc_client/tree/master/python"
 }

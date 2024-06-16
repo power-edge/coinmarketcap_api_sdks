@@ -13,7 +13,7 @@
 
 from setuptools import setup, find_packages  # noqa: H301
 
-NAME = "cmc-client"
+NAME = "pycmc_client"
 VERSION = "1.0.0"
 # To install the library, run the following
 #
@@ -35,7 +35,7 @@ setup(
     version=VERSION,
     description="Coinmarketcap API Swagger Implementation",
     author_email="",
-    url="https://github.com/wilkosz/coinmarketcap_api_sdks/tree/master/python",
+    url="https://github.com/power-edge/pycmc_client/tree/master/python",
     keywords=["Swagger", "Coinmarketcap API Swagger Implementation"],
     install_requires=REQUIRES,
     packages=find_packages(),
